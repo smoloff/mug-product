@@ -1,0 +1,146 @@
+section {
+  width: 1000px;
+  margin: auto;
+  border: 1px solid red;
+}
+.product-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.product-wrapper * {
+  padding: 0;
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+}
+.row {
+  flex-direction: row;
+}
+.col {
+  flex-direction: column;
+}
+.g20 {
+  gap: 20px;
+}
+.g10 {
+  gap: 10px;
+}
+.w100 {
+  width: 100%;
+}
+.fgrow-1 {
+  flex-grow: 1;
+  flex-shrink: 2;
+}
+.fgrow-2 {
+  flex-grow: 2;
+  flex-shrink: 1;
+}
+.no-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+.no-list li {
+  display: inline;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: turquoise;
+}
+.no-list li:hover {
+  cursor: pointer;
+}
+.non-list {
+  list-style: none;
+}
+.product-color ul {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  width: fit-content;
+}
+.product-color li {
+  border: 1px solid gray;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  padding: 0;
+}
+.product-price span {
+  color: red;
+  font-size: 30px;
+}
+
+.product-order button {
+  font-size: 20px;
+  background-color: orange;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+}
+/* .product-description ul {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  gap:10px;
+} */
+.product-description ul li {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  color: gray;
+}
+.color {
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.gray-text {
+  color: grey;
+}
+.gray-text span {
+  color: black;
+}
+
+.white {
+  background-color: #fff;
+}
+.yellow {
+  background-color: yellow;
+}
+.orange {
+  background-color: orange;
+}
+.red {
+  background-color: red;
+}
+.light-green {
+  background-color: rgb(47, 255, 68);
+}
+.green {
+  background-color: rgb(0, 128, 96);
+}
+.light-blue {
+  background-color: rgb(126, 126, 241);
+}
+.blue {
+  background-color: rgb(44, 18, 104);
+}
+.black {
+  background-color: black;
+}
+.pink {
+  background-color: pink;
+}
+.maroon {
+  background-color: maroon;
+}
+.gray {
+  background-color: rgba(240, 239, 239, 0.364);
+}
