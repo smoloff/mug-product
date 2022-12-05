@@ -6,8 +6,9 @@ let capacityValue = 330; // стартовий об'єм
 let colorValue = "white"; // стартовий колір
 let color = document.querySelector(".product-color")//div з кольорами чашок
 let webp = document.querySelector("#webp");
-let jpeg = document.querySelector("#jpeg")
-console.log(jpeg.src)
+let jpeg = document.querySelector("#jpeg");
+let orderButton = document.querySelector("#order-button")
+console.log(orderButton)
 
 
 
@@ -44,7 +45,8 @@ function sort(val, col) {
             currentColor.innerText = element.name;
             productPrice.innerText = element.price + " грн";
             webp.srcset = `https://www.paperfox.com.ua/wp-content/uploads/${element.webp}`;
-            jpeg.src = `https://www.paperfox.com.ua/wp-content/uploads/${element.jpeg}`
+            jpeg.src = `https://www.paperfox.com.ua/wp-content/uploads/${element.jpeg}`;
+            orderButton.href= element.link;
         }
     });
 }
