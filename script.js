@@ -44,9 +44,9 @@ function sort(val, col) {
             currentCapacity.innerText = element.value + " мл";
             currentColor.innerText = element.name;
             productPrice.innerText = element.price + " грн";
-            webp.srcset = `https://www.paperfox.com.ua/wp-content/uploads/${element.webp}`;
-            jpeg.src = `https://www.paperfox.com.ua/wp-content/uploads/${element.jpeg}`;
-            orderButton.href= element.link;
+            webp.srcset = `https://www.paperfox.com.ua/wp-content/uploads/${element.img}.webp`;
+            jpeg.src = `https://www.paperfox.com.ua/wp-content/uploads/${element.img}.jpeg`;
+            orderButton.href= `https://www.paperfox.com.ua/product/${element.link}`;
         }
     });
 }
@@ -56,8 +56,7 @@ const capacity180 = [
         value: 180,
         color: "white",
         name: "Білий",
-        webp: "2015/06/mug-print-310-white.webp",
-        jpeg: "2015/06/mug-print-310-white.jpeg",
+        img: "2015/06/mug-print-310-white",
         price: 140,
         link: "mug-white-180"
     },
@@ -65,8 +64,7 @@ const capacity180 = [
         value: 180,
         color: "orange",
         name: "Помаранчевий",
-        webp: "2015/06/mug-print-310-inner-orange.webp",
-        jpeg: "2015/06/mug-print-310-inner-orange.jpg",
+        img: "2015/06/mug-print-310-inner-orange",
         price: 140,
         link: "mug-orange-mini"
     },
@@ -74,8 +72,7 @@ const capacity180 = [
         value: 180,
         color: "yellow",
         name: "Жовтий",
-        webp: "2015/06/mug-print-310-inner-yellow.webp",
-        jpeg: "2015/06/mug-print-310-inner-yellow.jpg",
+        img: "2015/06/mug-print-310-inner-yellow",
         price: 140,
         link: "mug-yellow-mini"
     }
@@ -86,8 +83,7 @@ const capacity330 = [
         value: 330,
         color: "white",
         name: "Білий",
-        webp: "2015/06/mug-print-310-white.webp",
-        jpeg: "2015/06/mug-print-310-white.jpeg",
+        img: "2015/06/mug-print-310-white",
         price: 140,
         link: "mug-white"
     },
@@ -95,8 +91,7 @@ const capacity330 = [
         value: 330,
         color: "orange",
         name: "Помаранчевий",
-        webp: "2015/06/mug-print-310-inner-orange.webp",
-        jpeg: "2015/06/mug-print-310-inner-orange.jpg",
+        img: "2015/06/mug-print-310-inner-orange",
         price: 150,
         link: "mug-orange-"
 
@@ -106,8 +101,7 @@ const capacity330 = [
         value: 330,
         color: "yellow",
         name: "Жовтий",
-        webp: "2015/06/mug-print-310-inner-yellow.webp",
-        jpeg: "2015/06/mug-print-310-inner-yellow.jpg",
+        img: "2015/06/mug-print-310-inner-yellow",
         price: 150,
         link: "mug-yellow-"
 
@@ -119,8 +113,7 @@ const capacity425 = [
         value: 425,
         color: "white",
         name: "Білий",
-        webp: "2017/02/mug-print-white-425.webp",
-        jpeg: "2017/02/mug-print-white-425.jpg",
+        img: "2017/02/mug-print-white-425",
         price: 200,
         link: "mug-white-xl"
     },
@@ -128,8 +121,7 @@ const capacity425 = [
         value: 425,
         color: "orange",
         name: "Помаранчевий",
-        webp: "2017/02/mug-print-orange-425.webp",
-        jpeg: "2017/02/mug-print-orange-425.jpg",
+        img: "2017/02/mug-print-orange-425",
         price: 200,
         link: "mug-orange-xl"
 
@@ -138,8 +130,7 @@ const capacity425 = [
         value: 425,
         color: "yellow",
         name: "Жовтий",
-        webp: "2017/02/mug-print-yellow-425.webp",
-        jpeg: "2017/02/mug-print-yellow-425.jpg",
+        img: "2017/02/mug-print-yellow-425",
         price: 200,
         link: "mug-yellow-xl"
     }
