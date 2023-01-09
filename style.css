@@ -1,3 +1,7 @@
+body {
+font-family: Arial, Helvetica, sans-serif;
+}
+
 section {
   width: 1000px;
   margin: auto;
@@ -64,7 +68,7 @@ section {
   width: fit-content;
 }
 .product-color li {
-  border: 1px solid gray;
+  border: 1px solid rgb(228, 225, 225);
   width: 30px;
   height: 30px;
   line-height: 30px;
@@ -141,6 +145,30 @@ section {
 .maroon {
   background-color: maroon;
 }
+.chameleon-black {
+  background: linear-gradient(black, white);
+}
+
+.chameleon-black {
+  background: linear-gradient(black, white);
+}
+
+.chameleon-blue {
+  background: linear-gradient(blue, white);
+}
+
+.chameleon-red {
+  background: linear-gradient(red, white);
+}
+
+.hidden-color{
+  visibility: hidden;
+}
 .gray {
   background-color: rgba(240, 239, 239, 0.364);
+  border: 2px solid white;
+
+}
+.selected {
+  border: 2px solid lightgray
 }

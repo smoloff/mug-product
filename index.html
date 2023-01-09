@@ -11,90 +11,108 @@
 
 <body>
     <section>
-        <div class="product-wrapper w100">
+        <div class="product-wrapper w100" itemscope itemtype="http://schema.org/Product">
             <div class="product-image">
                 <picture>
-                    <source  id = "webp" srcset="https://www.paperfox.com.ua/wp-content/uploads/2015/06/mug-print-310-white.webp"
+                    <source id="webp"
+                        srcset="https://www.paperfox.com.ua/wp-content/uploads/2015/06/mug-print-310-white.webp"
                         type="image/webp">
-                    <img id = "jpeg" src="https://www.paperfox.com.ua/wp-content/uploads/2015/06/mug-print-310-white.jpg"
+                    <img itemprop="image" id="jpeg"
+                        src="https://www.paperfox.com.ua/wp-content/uploads/2015/06/mug-print-310-white.jpg"
                         alt="замовити друк на чашках" description="замовити друк на чашках в Києві"
                         title="замовити друк на чашках в Києві">
                 </picture>
             </div>
             <div class="product-details flex col g20">
                 <div class="prduct-name">
-                    <h4>Друк на білих чашках</h4>
+                    <h4 itemprop="name" content="Замовити друк на чашках">Замовити друк на чашках</h4>
                 </div>
                 <div class="product-capacity">
                     <p class="gray-text">Об'єм: <strong><span id="current-capacity">330 мл</span></strong></p>
                     <ul class="no-list" id="product-capacity">
                         <li class="gray" value="180" title="чашка міні об'ємом 180 мл">180 мл</li>
-                        <li value="330" class="gray" title="чашка стандартна об'ємом 330 мл">330 мл</li>
-                        <li value="425" class="gray" title="чашка велика XL об'ємом 425 мл">425 мл</li>
+                        <li class="gray selected" value="330" title="чашка стандартна об'ємом 330 мл">330 мл</li>
+                        <li class="gray" value="425" title="чашка велика XL об'ємом 425 мл">425 мл</li>
                     </ul>
                 </div>
                 <div class="product-color">
                     <p class="gray-text">Колір: <strong> <span id="current-color">Білий</span></strong></p>
-                    <ul class="no-list flex row">
-                        <li data-color="white" class="white" title="Білий"></li>
-                        <li data-color="red" class="red" title="Червоний"></li>
-                        <li data-color="orange" class="orange" title="Помаранчевий"></li>
-                        <li data-color="yellow" class="yellow" title="Жовтий"></li>
-                        <li data-color="light-green" class="light-green" title="Салатовий"></li>
-                        <li data-color="green" class="green" title="Зелений"></li>
-                        <li data-color="light-blue" class="light-blue" title="Салатовий"></li>
-                        <li data-color="blue" class="blue" title="Кобальть"></li>
-                        <li data-color="black" class="black" title="Чорний"></li>
-                        <li data-color="pink" class="pink" title="Рожевий"></li>
-                        <li data-color="maroon" class="maroon" title="Бордовий"></li>
+                    <ul class="no-list flex row" id="color-set">
+                        <li data-color="white" class="white selected" title="Білий" itemprop="color" content="Білий">
+                        </li>
+                        <li data-color="red" class="red" title="Червоний" itemprop="color" content="Червоний"></li>
+                        <li data-color="orange" class="orange" title="Помаранчевий" itemprop="color"
+                            content="Помаранчевий"></li>
+                        <li data-color="yellow" class="yellow" title="Жовтий" itemprop="color" content="Жовтий"></li>
+                        <li data-color="light-green" class="light-green" title="Салатовий" itemprop="color"
+                            content="Салатовий"></li>
+                        <li data-color="green" class="green" title="Зелений" itemprop="color" content="Зелений"></li>
+                        <li data-color="light-blue" class="light-blue" title="Блактиний" itemprop="color"
+                            content="Блакитний"></li>
+                        <li data-color="blue" class="blue" title="Фіолетовий" itemprop="color" content="Фіолетовий">
+                        </li>
+                        <li data-color="black" class="black" title="Чорний" itemprop="color" content="Чорний"></li>
+                        <li data-color="pink" class="pink" title="Рожевий" itemprop="color" content="Рожевий"></li>
+                        <li data-color="maroon" class="maroon" title="Бордовий" itemprop="color" content="Бордовий">
+                        </li>
+                        <li data-color="chameleon-black" class="chameleon-black" title="Хамелеон чорний"
+                            itemprop="color" content="Хамелеон чорний"></li>
+                        <li data-color="chameleon-red" class="chameleon-red" title="Хамелеон червоний" itemprop="color"
+                            content="Хамелеон червоний"></li>
+                        <li data-color="chameleon-blue" class="chameleon-blue" title="Хамелеон синій" itemprop="color"
+                            content="Хамелеон синій"></li>
 
                     </ul>
                 </div>
                 <div class="product-description">
                     <ul class="non-list flex col ">
-                        <li><i> <img src="dishwasher.png" width="25"
-                                    alt="Можна мити в посудомийній машині в режимі ЕКО"
+                        <li><i> <img src="dishwasher.png" width="25" alt="Можна мити в посудомийній машині в режимі ЕКО"
                                     title="Можна мити в посудомийній машині в режимі ЕКО"></i>
                             <span class="gray-text"
                                 title="Використовуючи режим ЕКО, Ви значно продовжите термін користування чашкою">
                                 Мийте в посудомийці</span>
                         </li>
                         <li>
-                            <i> <img src="microwave.png" width="25"
-                                    alt="Можна використовувати в мікрохвильовый печі"
+                            <i> <img src="microwave.png" width="25" alt="Можна використовувати в мікрохвильовый печі"
                                     title="Можна використовувати в мікрохвильовый печі"></i>
-                            <span title="Розігрівайте вашу улюблену каву без обмежень, бо чашки запікаються при температурі 180 °С ">
+                            <span
+                                title="Розігрівайте вашу улюблену каву без обмежень, бо чашки запікаються при температурі 180 °С ">
                                 Нагрівайте в мікрохвильовці</span>
                         </li>
                         <li>
-                            <i> <img src="color-wheel.png" width="25"
-                                    alt="Без обмежень в кількості кольорів"
+                            <i> <img src="color-wheel.png" width="25" alt="Без обмежень в кількості кольорів"
                                     title="Без обмежень в кількості кольорів"></i>
-                                    <span title="Кількість використинах кольорів ніяк не впливає на вартість замовлення">Повна кольорова гамма</span>
+                            <span
+                                title="Кількість використинах кольорів ніяк не впливає на вартість замовлення">Повнокольорова
+                                гамма друку</span>
                         </li>
                         <li>
-                            <i> <img src="potters-wheel.png" width="25"
-                                alt="Керамічна чашка для щоденного корстування"
-                                title="Керамічна чашка для щоденного корстування"></i>
-                                <span title="Керамічна основа із якої зроблені чашки не мають обмежень що до користування">Користуйтесь щоденно</span>
+                            <i> <img src="potters-wheel.png" width="25" alt="Керамічна чашка для щоденного корстування"
+                                    title="Керамічна чашка для щоденного корстування"></i>
+                            <span
+                                title="Керамічна основа із якої зроблені чашки не мають обмежень що до користування">Користуйтесь
+                                щоденно</span>
                         </li>
                         <li><i> <img src="icons8-purchase-order-50.png" width="25"
-                            alt="Приймаємо замовлення на друк на чашках від 1 шт"
-                            title="Приймаємо замовлення на друк на чашках від 1 шт"></i>
-                            <span title="Приймаємо замовлення на друк на чашках від 1 шт">Замовляйте від 1 шт.</span>
+                                    alt="Приймаємо замовлення на друк на чашках від 1 шт"
+                                    title="Приймаємо замовлення на друк на чашках від 1 шт"></i>
+                            <span title="Приймаємо замовлення на друк на чашках від 1 шт">Друк від 1 шт.</span>
+                        </li>
+                        <li><i> <img src="allpurpose.png" width="25" alt="Використовуйте не за призначенням"
+                                    title="Чашку із друком не обовʼязково виктористовувати в якості чашки, а можна ще в якості вази, копілки, або для зьереження набоїв (ми жартуємо, а може і не жартуємо)"></i>
+                            <span
+                                title="Використовуйте в якості чашки, вази, копілки, або магазину набоїв (жартуємо, а може і не жартуємо)">Багатоцільове
+                                призначення</span>
                         </li>
                     </ul>
 
-
-
-                    
-                    
                 </div>
                 <div class="product-price">
-                    <span id="product-price">150 грн</span>
+                    <span id="product-price" itemprop="price" content="150.00">150 <span itemprop="priceCurrency"
+                            content="UAH">грн</span></span>
                 </div>
                 <div class="product-order">
-                    <a id = "order-button" href="#"><button>Замовити</button></a>
+                    <a id="order-button" href="#"><button>Замовити</button></a>
                 </div>
 
             </div>
